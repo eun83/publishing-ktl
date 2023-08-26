@@ -615,14 +615,11 @@ html, body {
     background: linear-gradient(to bottom, #ffffff 0%,#ffffff 10%,#f6f3f3 10%,#f6f3f3 100%);
 }
 .main .edu_wrap .inner {
-    display: block;
     height: 38.25rem;
-    padding: 0;
-    
-    
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .main .edu_wrap .left_box {
-    position: absolute;
     width: 30%;
     padding-top: 7.5rem;
 }
@@ -676,26 +673,22 @@ html, body {
     color: #000;
     border-color: #020202;    
 }
-
-
 .main .edu_wrap .right_box {
-    /* margin-left: 25rem; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-left: 25rem;
 }
-.main .edu_wrap .right_box .academy {
+.main .edu_wrap .right_box > ul li {
     height: 38.25rem;
+    padding-top: 13rem;
 }
-.main .academy .academy_layout {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 10rem 0 0 25rem;
-}
-
-.main .edu_wrap .right_box .academy > div p {
+.main .edu_wrap .right_box > ul li p {
     margin-bottom: 1.75rem;
     color: #393939;
     letter-spacing: -1px;
 }
-.main .edu_wrap .right_box .academy > div p b {
+.main .edu_wrap .right_box > ul li p b {
     font-weight: 900;
     font-size:2.25rem;
     font-family: 'NanumSquare';
@@ -746,32 +739,27 @@ html, body {
     background: #111;
     transition: all .3s ease-in;
 }
-.main .edu_wrap .right_box .academy.online {
-    background: url(../images/main/ktl_bg_01.png)no-repeat;
-    background-position: right 30% bottom;
+.main .edu_wrap .right_box li.academy_01 {
+    background: url(../images/main/ktl_bg_01.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.online p b {
+.main .edu_wrap .right_box li.academy_01 p b {
     color: #f0c628;
 }
-.main .edu_wrap .right_box .academy.incumbent {
-    background: url(../images/main/ktl_bg_02.png)no-repeat;
-    background-position: right 30% bottom;
+.main .edu_wrap .right_box li.academy_02 {
+    background: url(../images/main/ktl_bg_02.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.incumbent p b {
+.main .edu_wrap .right_box li.academy_02 p b {
     color: #ff7b92;
 }
-.main .edu_wrap .right_box .academy.unemployed {
-    background: url(../images/main/ktl_bg_03.png)no-repeat;
-    background-position: right 30% bottom;
+.main .edu_wrap .right_box li.academy_03 {
+    background: url(../images/main/ktl_bg_03.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.unemployed p b {
+.main .edu_wrap .right_box li.academy_03 p b {
     color: #b07bf2;
 }
 .main .edu_wrap .right_box .paging_box {
     margin-left: 43rem;
 }
-/*
-*/
 
 /********** What's NEW **********/
 .main .borad_wrap .inner {
