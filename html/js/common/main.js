@@ -16,7 +16,7 @@ $(function(){
             nextArrow : "<button type='button' class='slick-next'>Next</button>",		// 다음 화살표 모양 설정
             dotsClass : "slick-dots", 	//아래 나오는 페이지네이션(점) css class 지정
             draggable : true, 	//드래그 가능 여부 
-
+            appendDots : document.getElementById('slider_curric_dots'),
             responsive: [ // 반응형 웹 구현 옵션
                 {  
                     breakpoint: 960, //화면 사이즈 960px
