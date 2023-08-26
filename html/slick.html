@@ -179,14 +179,13 @@
                         <div class="dots_control">
                             <div id="slider_curric_dots"></div>
                             <div class="play_btn">
-                                <a href="" id="slider_curric_pause" class="stop"><span class="hide">stop</span></a>
+                                <a href="" class="stop"><span class="hide">stop</span></a>
                                 <!-- <a href="" class="play"><span class="hide">play</span></a> -->
                             </div>
                         </div>
                     </div>
                     <div class="prog_curr">
-                        <div class="curriculum" id="slider-curriculum">
-
+                        <div class="curriculum" id="slider-curriculum" slick-tool-area="prog_box">
                             <div class="course unemployed">
                                 <div class="curr_info">
                                     <div>
@@ -205,12 +204,11 @@
                                     <a href="" class="arrow_icon">상세보기</a>
                                     <a href="" class="arrow_icon">수강신청</a>
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <div class="course incumbent">
                                 <div class="curr_info">
                                     <div>
-                                        <h4>미취업자</h4>
+                                        <h4>재직자</h4>
                                         <p>
                                             <span>서울</span>
                                             <span>07-22 ~ 08-26</span>
@@ -225,12 +223,11 @@
                                     <a href="" class="arrow_icon">상세보기</a>
                                     <a href="" class="arrow_icon">수강신청</a>
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <div class="course online">
                                 <div class="curr_info">
                                     <div>
-                                        <h4>미취업자</h4>
+                                        <h4>온라인</h4>
                                         <p>
                                             <span>서울</span>
                                             <span>07-22 ~ 08-26</span>
@@ -245,12 +242,11 @@
                                     <a href="" class="arrow_icon">상세보기</a>
                                     <a href="" class="arrow_icon">수강신청</a>
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <div class="course incumbent">
                                 <div class="curr_info">
                                     <div>
-                                        <h4>미취업자</h4>
+                                        <h4>재직자</h4>
                                         <p>
                                             <span>서울</span>
                                             <span>07-22 ~ 08-26</span>
@@ -265,12 +261,11 @@
                                     <a href="" class="arrow_icon">상세보기</a>
                                     <a href="" class="arrow_icon">수강신청</a>
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <div class="course online">
                                 <div class="curr_info">
                                     <div>
-                                        <h4>미취업자</h4>
+                                        <h4>온라인</h4>
                                         <p>
                                             <span>서울</span>
                                             <span>07-22 ~ 08-26</span>
@@ -288,20 +283,7 @@
                             </div>                  
                         </div>                        
                     </div>
-                <!-- </div>
-                <div class="paging_box">
-                    <ul class="paging">
-                        <li><button class="active"><span class="hide">1</span></button></li>
-                        <li><button><span class="hide">2</span></button></li>
-                        <li><button><span class="hide">3</span></button></li>
-                        <li><button><span class="hide">4</span></button></li>
-                        <li><button><span class="hide">5</span></button></li>
-                    </ul>
-                    <div class="play_btn">
-                        <a href="" class="play"><span class="hide">play</span></a>
-                        <a href="" class="stop on"><span class="hide">stop</span></a>
-                    </div>
-                </div> -->
+                </div>                
             </div>
         </section>
 
@@ -320,8 +302,8 @@
                     </ul>
                 </div>
                 <div class="right_box">
-                    <ul>
-                        <li class="academy_01 on">
+                    <div id="slider-academy">
+                        <div class="academy online on">
                             <div>
                                 <p><b>온라인 교육</b></p>
                                 <p>온라인 교육을 통해 해외규격인증을 <br>획득하지 못한 중소기업을 위한 교육입니다.</p>
@@ -331,8 +313,8 @@
                                 <li><span>&#35; 중소기업 맞춤 교육</span></li>
                             </ul>
                             <a href="" class="more_btn"><span class="hide">더보기</span></a>
-                        </li>
-                        <li class="academy_02">
+                        </div>
+                        <div class="academy incumbent">
                             <div>
                                 <p><b>재직자 교육</b></p>
                                 <p>재직자 기술인력을 대상으로 <br>직무능력양상을 위한 교육을 진행합니다.</p>
@@ -342,8 +324,8 @@
                                 <li><span>&#35; 첨단교육훈련</span></li>
                             </ul>
                             <a href="" class="more_btn"><span class="hide">더보기</span></a>
-                        </li>
-                        <li class="academy_03">
+                        </div>
+                        <div class="academy unemployed">
                             <div>
                                 <p><b>미취업자 교육</b></p>
                                 <p>미취업자 대상 산업 맞춤형 <br>교육 훈련을 제공하고 있습니다.</p>
@@ -353,9 +335,9 @@
                                 <li><span>&#35; 중소기업 취업 지원</span></li>
                             </ul>
                             <a href="" class="more_btn"><span class="hide">더보기</span></a>
-                        </li>
-                    </ul>
-                    <div class="paging_box">
+                        </div>
+                    </div>
+                    <!-- <div class="paging_box">
                         <ul class="paging">
                             <li><button class="active"><span class="hide">1</span></button></li>
                             <li><button><span class="hide">2</span></button></li>
@@ -365,7 +347,7 @@
                             <a href="" class="play"><span class="hide">play</span></a>
                             <a href="" class="stop on"><span class="hide">stop</span></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
