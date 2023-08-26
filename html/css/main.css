@@ -136,8 +136,6 @@ html, body {
     border-bottom: none;
 }
 
-
-
 /********** 기존 메뉴 색상 변경 **********/
 .main .header,
 .main .header.scrolled .gnb_header,
@@ -611,81 +609,20 @@ html, body {
     border-color: #111;
 }
 
-
-/*
-.main .paging_box {
-    display: inline-flex;
-    position: absolute;
-    margin-top: -3.75rem;
-    align-items: center;
-}
-.main .paging_box .paging {
-    display: flex;
-}
-.main .paging_box .paging button {
-    display: inline-block;
-    width: .625rem;
-    height: .625rem;
-    margin: 0 .3125rem;
-    border-radius: 50px;
-    background: #e6e6e6;
-    vertical-align: middle;
-}
-.main .paging_box .paging button.active {
-    background-color: #333;
-}
-.main .paging_box .play_btn {
-    display: flex;
-    margin: 0 .75rem;
-}
-.main .paging_box .play_btn a {
-    display: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50px;
-    background: #e6e6e6;
-    color: #333;
-}
-.main .paging_box .play_btn a.on {
-    display: block;
-}
-.main .paging_box .play_btn a.play::before {
-    content: '';
-    display: block;
-    width:0; height:0;
-    margin-top: calc(50% - .438rem);
-    margin-left: calc(50% - .1875rem);
-    border:.375rem solid transparent;
-    border-left-color:currentColor;
-}
-.main .paging_box .play_btn a.stop::before {
-    content: '';
-    display: block;
-    width: .1875rem;
-    height: .75rem;
-    margin-top: calc(50% - .438rem);
-    margin-left: calc(50% - .1875rem);
-    border: 2px solid currentColor;
-    border-top: none;
-    border-bottom: none;
-} 
-.main .paging_box .play_btn a:hover {
-    background: #333;
-    color: #fff;
-    transition: all .3s ease-in;
-}
-*/
 /********** KTL 아카데미 **********/
 .main .edu_wrap {
     position: relative;
     background: linear-gradient(to bottom, #ffffff 0%,#ffffff 10%,#f6f3f3 10%,#f6f3f3 100%);
 }
 .main .edu_wrap .inner {
+    display: block;
     height: 38.25rem;
-    max-width: 1280px;
-    margin: 0 auto;
+    padding: 0;
+    
+    
 }
 .main .edu_wrap .left_box {
+    position: absolute;
     width: 30%;
     padding-top: 7.5rem;
 }
@@ -739,26 +676,26 @@ html, body {
     color: #000;
     border-color: #020202;    
 }
+
+
 .main .edu_wrap .right_box {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
 }
-.main .edu_wrap .right_box > ul > li {
-    display: none;
+.main .edu_wrap .right_box .academy {
     height: 38.25rem;
-    padding-top: 13rem;
 }
-.main .edu_wrap .right_box > ul > li.on {
-    display: block;
+.main .academy .academy_layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10rem 0 0 25rem;
 }
-.main .edu_wrap .right_box li p {
+
+.main .edu_wrap .right_box .academy > div p {
     margin-bottom: 1.75rem;
     color: #393939;
     letter-spacing: -1px;
 }
-.main .edu_wrap .right_box li p b {
+.main .edu_wrap .right_box .academy > div p b {
     font-weight: 900;
     font-size:2.25rem;
     font-family: 'NanumSquare';
@@ -809,27 +746,32 @@ html, body {
     background: #111;
     transition: all .3s ease-in;
 }
-.main .edu_wrap .right_box li.academy_01 {
-    background: url(../images/main/ktl_bg_01.png)no-repeat left bottom;    
+.main .edu_wrap .right_box .academy.online {
+    background: url(../images/main/ktl_bg_01.png)no-repeat;
+    background-position: right 30% bottom;
 }
-.main .edu_wrap .right_box li.academy_01 p b {
+.main .edu_wrap .right_box .academy.online p b {
     color: #f0c628;
 }
-.main .edu_wrap .right_box li.academy_02 {
-    background: url(../images/main/ktl_bg_02.png)no-repeat left bottom;    
+.main .edu_wrap .right_box .academy.incumbent {
+    background: url(../images/main/ktl_bg_02.png)no-repeat;
+    background-position: right 30% bottom;
 }
-.main .edu_wrap .right_box li.academy_02 p b {
+.main .edu_wrap .right_box .academy.incumbent p b {
     color: #ff7b92;
 }
-.main .edu_wrap .right_box li.academy_03 {
-    background: url(../images/main/ktl_bg_03.png)no-repeat left bottom;    
+.main .edu_wrap .right_box .academy.unemployed {
+    background: url(../images/main/ktl_bg_03.png)no-repeat;
+    background-position: right 30% bottom;
 }
-.main .edu_wrap .right_box li.academy_03 p b {
+.main .edu_wrap .right_box .academy.unemployed p b {
     color: #b07bf2;
 }
 .main .edu_wrap .right_box .paging_box {
     margin-left: 43rem;
 }
+/*
+*/
 
 /********** What's NEW **********/
 .main .borad_wrap .inner {
