@@ -112,6 +112,11 @@ html, body {
     background: #e6e6e6;
     color: #333;
 }
+.main .play_btn > a:hover {
+    background: #333;
+    color: #fff;
+    transition: all .3s ease-in;
+}
 .main .play_btn a.play::before {
     content: '';
     display: block;
@@ -679,16 +684,16 @@ html, body {
     width: 100%;
     margin-left: 25rem;
 }
-.main .edu_wrap .right_box > ul li {
+.main .edu_wrap .right_box .academy_list .academy {
     height: 38.25rem;
     padding-top: 13rem;
 }
-.main .edu_wrap .right_box > ul li p {
+.main .edu_wrap .right_box .academy_list .academy p {
     margin-bottom: 1.75rem;
     color: #393939;
     letter-spacing: -1px;
 }
-.main .edu_wrap .right_box > ul li p b {
+.main .edu_wrap .right_box .academy_list .academy p b {
     font-weight: 900;
     font-size:2.25rem;
     font-family: 'NanumSquare';
@@ -739,26 +744,31 @@ html, body {
     background: #111;
     transition: all .3s ease-in;
 }
-.main .edu_wrap .right_box li.academy_01 {
+.main .edu_wrap .right_box .academy.aca_01 {
     background: url(../images/main/ktl_bg_01.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box li.academy_01 p b {
+.main .edu_wrap .right_box .academy.aca_01 p b {
     color: #f0c628;
 }
-.main .edu_wrap .right_box li.academy_02 {
+.main .edu_wrap .right_box .academy.aca_02 {
     background: url(../images/main/ktl_bg_02.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box li.academy_02 p b {
+.main .edu_wrap .right_box .academy.aca_02 p b {
     color: #ff7b92;
 }
-.main .edu_wrap .right_box li.academy_03 {
+.main .edu_wrap .right_box .academy.aca_03 {
     background: url(../images/main/ktl_bg_03.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box li.academy_03 p b {
+.main .edu_wrap .right_box .academy.aca_03 p b {
     color: #b07bf2;
 }
 .main .edu_wrap .right_box .paging_box {
     margin-left: 43rem;
+}
+.main .right_box .dots_control {
+  position: absolute;
+  margin-top: -6rem;
+  margin-left: 45rem;
 }
 
 /********** What's NEW **********/
