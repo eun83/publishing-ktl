@@ -71,7 +71,12 @@ $(function(){
             }
             return false;
           });
-
+          $('#edu_list > li > a').each(function(index){
+            $(this).click(function(){
+              slick.slickGoTo(index);
+              return false;
+            });
+          });
         }).slick({
           slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
           infinite : true, 	//무한 반복 옵션	 
