@@ -476,7 +476,7 @@ html, body {
     font: bold .875rem "Malgun Gothic", "맑은 고딕";
 }
     /* 4번째 알파값주기 */
-.main .prog_wrap .curriculum .slick-active.last {
+.main .prog_wrap .curriculum .slick-active-last {
     opacity: .5;
 }
 .main .course .curr_info {
