@@ -47,11 +47,30 @@ $(function(){
                     } 
                 }
             ]
-        }).on('afterChange', function(event, slick, currentSlide, nextSlide){
-            console.info(currentSlide);
+        }).on('afterChange', function(_event, slick, currentSlide, _nextSlide){
+          // var total = slick.$slides.length;
+          // if(total>0){
+            
+          // }
+          // slick.$slides.removeClass('last');
+          // slick.$slides.eq(currentSlide+3).addClass('last');
         });
 
-        $('#slider-academy').slick({
+        $('#slider-academy').on('init', function(_event, slick){
+              var tool_area = slick.$slider.attr('slick-tool-area');
+              var closet_target='.'+tool_area;
+              slick.$slider.closest(closet_target).find('.play_btn > a').click(function(){
+                  var $me = $(this);
+                  if($me.hasClass('stop')){
+                      $me.removeClass('stop').addClass('play');
+                      slick.$slider.slick('slickPause');
+                  } else {
+                      $me.removeClass('play').addClass('stop');
+                      slick.$slider.slick('slickPlay');
+                  }
+                  return false;
+              });
+          }).slick({
             slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
             infinite : true, 	//무한 반복 옵션	 
             slidesToShow : 1,		// 한 화면에 보여질 컨텐츠 개수
