@@ -48,9 +48,10 @@ $(function(){
     appendDots : document.getElementById('slider_curric_dots'),  // dot 버튼 생길 위치
     responsive: [               // 반응형 웹 구현 옵션  
       {
-        breakpoint: 960,        // 화면 사이즈
+        breakpoint: 1080,        // 화면 사이즈
         settings: {
-          slidesToShow:3        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+          slidesToShow:3,     // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+          arrows : false
         }
       },
       { 
@@ -115,13 +116,13 @@ $(function(){
       {  
         breakpoint: 960,        // 화면 사이즈
         settings: {
-          slidesToShow:3        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+          slidesToShow:1        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
         } 
       },
       { 
         breakpoint: 768,        // 화면 사이즈
         settings: {	
-          slidesToShow:2        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+          slidesToShow:1        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
         } 
       }
     ]

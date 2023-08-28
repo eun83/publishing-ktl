@@ -95,7 +95,7 @@ html, body {
 }
 .main .slick-dots li button::before {
     font-size: 12px;
-    opacity: .15;
+    opacity: .2;
 }
 .main .slick-dots li.slick-active button:before {
     opacity: 1;
@@ -455,8 +455,11 @@ html, body {
     transition: all .2s ease-in;
     opacity: .9;
 }
-.main .prog_box .date_box .dots_control {
-    margin-top: 1rem;
+.main .prog_box .dots_control {
+    display: inline-flex;
+    position: absolute;
+    margin-top: -5.5rem;
+    z-index: 1;
 }
     /* 교육과정 박스 */
 :root {
@@ -523,6 +526,9 @@ html, body {
 }
 .main .course .curr_btn a:hover {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+}
+.main .curr_btn .arrow_icon {
+    display: inline-block;
 }
 .main .curr_btn .arrow_icon::before {
     right: calc(1.75rem + 1px);
@@ -747,22 +753,22 @@ html, body {
     background: #111;
     transition: all .3s ease-in;
 }
-.main .edu_wrap .right_box .academy.aca_01 {
+.main .edu_wrap .right_box .aca_01 {
     background: url(../images/main/ktl_bg_01.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.aca_01 p b {
+.main .edu_wrap .right_box .aca_01 p b {
     color: #f0c628;
 }
-.main .edu_wrap .right_box .academy.aca_02 {
+.main .edu_wrap .right_box .aca_02 {
     background: url(../images/main/ktl_bg_02.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.aca_02 p b {
+.main .edu_wrap .right_box .aca_02 p b {
     color: #ff7b92;
 }
-.main .edu_wrap .right_box .academy.aca_03 {
+.main .edu_wrap .right_box .aca_03 {
     background: url(../images/main/ktl_bg_03.png)no-repeat left bottom;    
 }
-.main .edu_wrap .right_box .academy.aca_03 p b {
+.main .edu_wrap .right_box .aca_03 p b {
     color: #b07bf2;
 }
 .main .right_box .dots_control {
@@ -1036,17 +1042,53 @@ html, body {
 }
 
 
-/* respond */
+/* ---------- respond ---------- */
 
 /* 플러스사이즈 */
 @media screen and (max-width: 1270px) {
+    
+    /****** 교육과정 ******/
+    .main .tit_box {
+        margin-bottom: 2rem;
+    }
+    .main .prog_box .date_box {
+        position: static;
+        display: flex;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .main .prog_box .date_box p {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+    .main .prog_box .date_box p span,
+    .main .prog_box .date_box p:first-child span {
+        font-weight: 800;
+        font-size: 1.375rem;    
+    }
+    .main .prog_box .date_box > a {
+        margin-left: auto;
+    }
+    .main .prog_wrap .prog_curr {
+        margin-left: 5rem;
+    }
+    .main .prog_wrap .prog_curr .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .main .prog_box .dots_control {
+        margin-top: 0;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
 
     /****** KTL아카데미 ******/
     .main .right_box .dots_control {        
         margin-left: 0;
         right: 27rem;
-    }
+    }  
 }
+
 /* 플러스사이즈 */
 @media screen and (max-width: 1139px) {
     /****** link ******/
@@ -1099,6 +1141,21 @@ html, body {
         bottom: 4.25rem;
     }
 }
+
+/* 플러스사이즈 */
+@media screen and (max-width: 1080px) {
+
+    /****** 교육과정 ******/
+    .main .prog_wrap .prog_curr {
+        margin-left: 0;
+        min-width: auto;
+    }
+    .main .prog_wrap .curriculum .course {
+        margin: 0 1rem 1.5rem 0;
+    }    
+
+}
+
 
 @media screen and (max-width:991px) {
 
@@ -1153,9 +1210,17 @@ html, body {
     /****** KTL아카데미 ******/
     .main .edu_wrap .left_box {
         position: absolute;
+        width: 100%;
+        z-index: 1;
     }
     .main .edu_wrap .edu_title {
         margin-bottom: 0;
+    }
+    .main .edu_wrap .edu_title p {
+        text-shadow: -1px -1px 3px rgba(255, 255, 255, 1);
+    }
+    .main .edu_wrap .edu_title p span {
+        display: inline-block;
     }
     .main .edu_wrap .edu_list {
         display: none;
@@ -1165,13 +1230,50 @@ html, body {
         margin-left: 0;
     }
     .main .edu_wrap .right_box .academy_list .academy {
-        padding: 15rem 3rem 0;
+        padding: 15rem 2.5rem 0;
+        background-position: center bottom;
     }
-
+    .main .edu_wrap .right_box .academy_list .academy p {
+        text-shadow: -1px -1px 3px rgba(255, 255, 255, 1);
+    }
+    .main .right_box .dots_control {
+        right: 2rem;
+        margin-top: -9rem;
+    }
 
 }
 
+/* 플러스사이즈 */
+@media screen and (max-width:875px) {
+    
+    /****** 교육과정 ******/
+    .main .course {
+        min-width: 13.375rem;
+    }
+    .main .course .curr_info > div {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .main .course .curr_info > div p {
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .main .curriculum .online .curr_btn a {
+        padding: .6875rem;
+        text-indent: 1rem;
+    }
+    .main .curriculum .online .curr_btn a span {
+        display: block;
+    }
+    
+    .main .curr_btn .arrow_icon::before {
+        margin-top: -1rem;        
+    }
+    .main .curr_btn .arrow_icon::after {
+        margin-top: -1.1875rem;
+    }
 
+}
 
 @media screen and (max-width:767px) {
 
@@ -1242,8 +1344,24 @@ html, body {
     .main .login_wrap {
         display: none;
     }
-    
-    
+    /****** KTL아카데미 ******/
+    .main .edu_wrap .inner {
+        height: 32rem;
+    }
+    .main .edu_wrap .left_box {
+        padding-top: 5.5rem;
+    }
+    .main .edu_wrap .right_box .academy_list .academy {
+        height: 32rem;
+        padding: 12.5rem 0 0;
+        background-size: 125%;
+    }
+    .main .edu_wrap .right_box .academy_list .academy p {
+        margin-bottom: 1.25rem;
+    }
+    .main .right_box .dots_control {
+        margin-top: -6.25rem;
+    }
 }
 
 
@@ -1269,6 +1387,12 @@ html, body {
         margin: 0 .3125rem .625rem .3125rem;
     }
 
+    /****** KTL아카데미 ******/
+    .main .edu_wrap .right_box .academy_list .academy {
+        height: 32rem;
+        padding: 12.5rem 0 0;
+        background-size: 180%;
+    }
 
 }
 
