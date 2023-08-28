@@ -1164,7 +1164,9 @@ html, body {
         position: static;
         margin-left: 0;
     }
-
+    .main .edu_wrap .right_box .academy_list .academy {
+        padding: 15rem 3rem 0;
+    }
 
 
 }
