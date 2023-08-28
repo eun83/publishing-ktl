@@ -55,9 +55,15 @@ $(function(){
         }
       },
       { 
-        breakpoint: 768,        // 화면 사이즈
+        breakpoint: 715,        // 화면 사이즈
         settings: {
           slidesToShow:2        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+        } 
+      },
+      { 
+        breakpoint: 480,        // 화면 사이즈
+        settings: {
+          slidesToShow:1        // 위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
         } 
       }
     ]

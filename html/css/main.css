@@ -528,17 +528,18 @@ html, body {
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
 }
 .main .curr_btn .arrow_icon {
-    display: inline-block;
+    display: block;
+    position: absolute;
+    margin-top: -.5rem;
+    right: -.125rem;
+    opacity: .5;
 }
 .main .curr_btn .arrow_icon::before {
     right: calc(1.75rem + 1px);
-    margin-top: .563rem;
-    opacity: .5;
 }
 .main .curr_btn .arrow_icon::after {
     right: 1.75rem;
-    margin-top: .375rem;
-    opacity: .5;
+    margin-top: -.1875rem;
 }
     /* 코스별 컬러 설정 */
     .main .prog_wrap .curriculum .unemployed {
@@ -1152,7 +1153,10 @@ html, body {
     }
     .main .prog_wrap .curriculum .course {
         margin: 0 1rem 1.5rem 0;
-    }    
+    }
+    .main .prog_wrap .curriculum .slick-active-last {
+        opacity: 1;
+    }
 
 }
 
@@ -1258,19 +1262,15 @@ html, body {
         margin: 0;
         margin-top: 1rem;
     }
-    .main .curriculum .online .curr_btn a {
+    .main .curriculum .curr_btn a {
         padding: .6875rem;
         text-indent: 1rem;
     }
-    .main .curriculum .online .curr_btn a span {
+    .main .curriculum .curr_btn a span {
         display: block;
     }
-    
-    .main .curr_btn .arrow_icon::before {
-        margin-top: -1rem;        
-    }
-    .main .curr_btn .arrow_icon::after {
-        margin-top: -1.1875rem;
+    .main .curr_btn .arrow_icon {
+        margin-top: -1rem;
     }
 
 }
@@ -1315,6 +1315,15 @@ html, body {
     }
     .main .link_wrap li:nth-child(7) a::before {
         background: url(../images/main/hover_ico_07.png) no-repeat center 25px;
+    }
+
+    /****** 교육과정 ******/
+    .main .tit_box {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .main .tit_box .tab_list {
+        text-align: right;
     }
 
 }
@@ -1362,6 +1371,34 @@ html, body {
     .main .right_box .dots_control {
         margin-top: -6.25rem;
     }
+
+    /****** 교육과정 ******/
+    .main .tit_box .tab_list {
+        text-align: left;
+        display: flex;
+        width: 100%;
+        margin: .5rem 0;
+    }
+    .main .tab_list ul {
+        width: 80%;
+    }
+    .main .tab_list ul li {
+        width: calc(25% - .5rem);
+        border-radius: .625rem;
+        background: #ebebeb;
+    }
+    .main .tab_list ul li:last-child {
+        margin-right: 0;
+    }
+    .main .tab_list .more_btn {
+        display: block;
+        width: 20%;
+        margin: 0 auto;
+    }
+    .main .prog_wrap .tit_box .tab_list a {
+        width: auto;
+    }
+    
 }
 
 
