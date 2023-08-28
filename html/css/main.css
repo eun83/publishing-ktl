@@ -81,7 +81,9 @@ html, body {
     /* slick 페이징 스타일 */
 .main .dots_control {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: flex-end;
 }
 .main .slick-dots {
     position: static;
@@ -426,7 +428,8 @@ html, body {
     /* slick에 붙이기 */
 .main .prog_box .date_box {
     position: absolute;
-    min-width: 15rem;
+    width:20%;
+    min-width: 10rem;
     font: 700 1rem 'NanumSquareNeo';
 }
 .main .prog_box .date_box p {
@@ -614,7 +617,7 @@ html, body {
     border-color: #111;
 }
 
-/********** KTL 아카데미 **********/
+/********** KTL아카데미 **********/
 .main .edu_wrap {
     position: relative;
     background: linear-gradient(to bottom, #ffffff 0%,#ffffff 10%,#f6f3f3 10%,#f6f3f3 100%);
@@ -762,13 +765,10 @@ html, body {
 .main .edu_wrap .right_box .academy.aca_03 p b {
     color: #b07bf2;
 }
-.main .edu_wrap .right_box .paging_box {
-    margin-left: 43rem;
-}
 .main .right_box .dots_control {
-  position: absolute;
-  margin-top: -6rem;
-  margin-left: 45rem;
+    position: absolute;
+    margin-top: -6rem;
+    margin-left: 45rem;
 }
 
 /********** What's NEW **********/
@@ -1039,6 +1039,15 @@ html, body {
 /* respond */
 
 /* 플러스사이즈 */
+@media screen and (max-width: 1270px) {
+
+    /****** KTL아카데미 ******/
+    .main .right_box .dots_control {        
+        margin-left: 0;
+        right: 27rem;
+    }
+}
+/* 플러스사이즈 */
 @media screen and (max-width: 1139px) {
     /****** link ******/
     .main .link_wrap .inner {
@@ -1141,7 +1150,20 @@ html, body {
         margin-left: 2rem;
     }
     
-
+    /****** KTL아카데미 ******/
+    .main .edu_wrap .left_box {
+        position: absolute;
+    }
+    .main .edu_wrap .edu_title {
+        margin-bottom: 0;
+    }
+    .main .edu_wrap .edu_list {
+        display: none;
+    }
+    .main .edu_wrap .right_box {
+        position: static;
+        margin-left: 0;
+    }
 
 
 
