@@ -860,6 +860,7 @@ html, body {
     content: '';
     display: block;
     position: absolute;
+    top: 0;
     width: .75rem;
     height: .75rem;
     margin-top: 3px;
