@@ -507,7 +507,7 @@ html, body {
     margin-left: auto;
 }
 .main .course .curr_info > div p span {
-    padding: .25rem 1rem .375rem;
+    padding: .25rem 1rem;
     border-radius: 50px;
     background: #fff;
     font-size: .75rem;
@@ -855,6 +855,8 @@ html, body {
 .main .clock_icon {
     position: absolute;
     display: block;
+    top; 0;
+    margin-top: -1px;
 }
 .main .clock_icon::before {
     content: '';
@@ -1561,8 +1563,8 @@ html, body {
         background: url(../images/main/ktl_m-bg_03.png)no-repeat;    
     }
     .main .edu_wrap .right_box .academy_list .academy {
-        background-size: 80%;
-        background-position: right bottom;
+        background-size: 60%;
+        background-position: right -.5rem bottom;
     }
     /****** footer ******/
         /* footer 여백을 위한 banner 패딩 */
