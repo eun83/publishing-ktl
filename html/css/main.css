@@ -26,34 +26,40 @@ html, body {
     font: 900 1.125rem 'NanumSquareNeo';
 }
 /* 공통 탭 버튼스타일 */
-.main .btn_gray a {
-    display: block;
-    padding: .1875rem 1rem .375rem;
+.main .tab_list ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.main .tab_list li {
+    margin-right: .5rem;
+    margin-bottom: .5rem;
     border-radius: .625rem;
     background: #ebebeb;
+}
+.main .tab_list a {
+    display: block;
+    width: 100%;
+    padding: .1875rem 1rem .375rem;    
     text-align: center; 
 }
-.main .btn_gray a:hover {
+.main .tab_list li:hover {
     background: #ccc;
     transition: all .2s ease-in;
 }
-.main .btn_gray .on a,
-.main .btn_gray .on a:hover {
+.main .tab_list .on,
+.main .tab_list .on:hover {
     background: #333;
+    border-radius: .625rem;
+}
+.main .tab_list .on a {
     color: #fff;
 }
-.main .tab_list ul {
-    display: inline-flex;
-}
-.main .tab_list ul li {
-    margin-right: .5rem;
-}
 .main .tab_list .more_btn {
-    display: inline-block;
-    background: none;
+    display: inline-flex;
+    width: auto;
+    margin-left: 1rem;
 }
 .main .tab_list .more_btn:hover {
-    background: none;
     color: #888;
 }
     /* 버튼 화살표 */
@@ -419,8 +425,8 @@ html, body {
     font: bold .813rem "Malgun Gothic", "맑은 고딕";
     color: #252525;
 }
-.main .prog_wrap .tit_box .tab_list a {
-    width: 5.375rem;       
+.main .prog_wrap .tab_list li {
+    min-width: 5.125rem;
 }
 .main .prog_wrap .prog_box {
     position: relative;
@@ -824,14 +830,10 @@ html, body {
     -webkit-box-orient: vertical;
 }
 .main .borad_wrap .new_list li a p:first-child {
-    display: -webkit-box;
-    overflow: hidden;
     min-height: 3.75rem;
     font: 400 1.125rem 'NanumSquareNeo';
     color: #000;
     letter-spacing: 0;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
 }
 .main .borad_wrap .new_list li a .new::after {
     content: 'NEW';
@@ -1141,6 +1143,21 @@ html, body {
     .main .visual .text_box > div {
         bottom: 4.25rem;
     }
+    /****** banner ******/
+    .main .banner_wrap .inner .banner_01 {
+        width: 58%;
+        padding: 2.375rem 2.5rem 2.5rem;
+    }
+    .main .banner_wrap .inner .banner_02 {
+        width: 40%;
+        margin-left: 1rem;
+    }
+    .main .banner_wrap .inner .banner_02 p {
+        margin: 2.375rem 2.5rem 1.9375rem;
+    }
+    .main .banner_wrap .inner > div p span {
+        display: block;
+    } 
 }
 
 /* 플러스사이즈 */
@@ -1273,6 +1290,36 @@ html, body {
         margin-top: -1rem;
     }
 
+    .main .borad_wrap .new_list {
+        flex-direction: column;
+    }
+    .main .borad_wrap .new_list li {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    .main .borad_wrap .new_list li:nth-child(n + 3) {
+        display: none;
+    }
+    .main .borad_wrap .new_list li a {
+        padding: 2rem 1.875rem;
+    }
+    .main .borad_wrap .new_list li a p {
+        margin-bottom: 1.25rem;        
+        -webkit-line-clamp: 2;
+    }
+    .main .borad_wrap .new_list li a p:first-child {
+        min-height: auto;
+    }
+
+}
+
+/* 플러스사이즈 */
+@media screen and (max-width: 825px) {
+
+    /****** banner ******/
+    .main .banner_wrap .inner .banner_02 p {
+        margin: 2.375rem 1.75rem 1.9375rem;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -1292,8 +1339,7 @@ html, body {
     .main .visual .text_box > div p:first-child {
         font-size: .938rem;
         margin: .75rem 0 .25rem;
-    } 
-
+    }
     /***** link ******/
     .main .link_wrap ul li a::before {
         background: url(../images/main/hover_ico_01.png) no-repeat center 25px;
@@ -1316,16 +1362,55 @@ html, body {
     .main .link_wrap li:nth-child(7) a::before {
         background: url(../images/main/hover_ico_07.png) no-repeat center 25px;
     }
-
     /****** 교육과정 ******/
     .main .tit_box {
         display: block;
         margin-bottom: 1rem;
     }
     .main .tit_box .tab_list {
+        margin-top: .5rem;
         text-align: right;
     }
+    /****** banner ******/
+    .main .banner_wrap .inner {
+        flex-direction: column;
+    }
+    .main .banner_wrap .inner .banner_01 {
+        width: 100%;
+        height: auto;
+        padding: 2rem 5%;
+        margin-bottom: 1rem;
+    }
+    
+    .main .banner_wrap .inner .banner_02 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }    
+    .main .banner_wrap .inner > div::after {
+        top: auto;
+        bottom: 0;
 
+    }
+    .main .banner_wrap .inner .banner_01::after {
+        height: 155px;
+        background-size: contain;
+    }
+    .main .banner_wrap .inner .banner_02::after {
+        height: 120px;
+        background-size: contain;     
+        bottom: 52px;
+        right: 1.5rem;
+    }
+    .main .banner_wrap .inner .banner_02 p {
+        margin: 2rem 5% 1.25rem;
+    }
+    .main .banner_wrap .inner > div p:first-child {
+        margin-bottom: 1rem;
+    }
+    .main .banner_wrap .inner > div a p:first-child {
+        font-size: 1.5rem;
+    }
 }
     
 
@@ -1371,37 +1456,19 @@ html, body {
     .main .right_box .dots_control {
         margin-top: -6.25rem;
     }
-
-    /****** 교육과정 ******/
-    .main .tit_box .tab_list {
-        text-align: left;
-        display: flex;
-        width: 100%;
-        margin: .5rem 0;
-    }
-    .main .tab_list ul {
-        width: 80%;
-    }
-    .main .tab_list ul li {
-        width: calc(25% - .5rem);
-        border-radius: .625rem;
-        background: #ebebeb;
-    }
-    .main .tab_list ul li:last-child {
-        margin-right: 0;
-    }
-    .main .tab_list .more_btn {
-        display: block;
-        width: 20%;
-        margin: 0 auto;
-    }
-    .main .prog_wrap .tit_box .tab_list a {
-        width: auto;
-    }
+    
+    
     
 }
 
+@media screen and (max-width: 600px) {
 
+    /****** 교육과정 ******/
+    .main .tit_box .tab_list {
+        margin-top: 1rem;
+    }
+
+}
 
 
 @media screen and (max-width:480px) {
@@ -1423,18 +1490,44 @@ html, body {
         min-width: 100px;
         margin: 0 .3125rem .625rem .3125rem;
     }
-
+    /****** 교육과정 ******/
+    .main .prog_wrap .tab_list li {
+        min-width: auto;
+    }
+    .main .tab_list .more_btn {
+        margin-left: .0;
+    }
     /****** KTL아카데미 ******/
+
+    .main .edu_wrap .right_box .aca_01 {
+        background: url(../images/main/ktl_m-bg_01.png)no-repeat;    
+    }
+    .main .edu_wrap .right_box .aca_02 {
+        background: url(../images/main/ktl_m-bg_02.png)no-repeat;    
+    }
+    .main .edu_wrap .right_box .aca_03 {
+        background: url(../images/main/ktl_m-bg_03.png)no-repeat;    
+    }
     .main .edu_wrap .right_box .academy_list .academy {
-        height: 32rem;
-        padding: 12.5rem 0 0;
-        background-size: 180%;
+        background-position: right bottom;
+        background-size: 80%;
     }
 
 }
 
 /* 플러스사이즈 */
+@media screen and (max-width:368px) {
+
+    /****** 교육과정 ******/
+    .main .tab_list a {
+        padding: .1875rem .5rem .375rem;
+    }  
+}
+
+/* 플러스사이즈 */
 @media screen and (max-width:361px) {
+    
+    /**** link *****/
     .main .link_wrap .inner > ul li {
         width: calc(50% - .625rem);
         min-width: 100px;
