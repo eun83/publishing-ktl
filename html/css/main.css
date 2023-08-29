@@ -856,8 +856,8 @@ html, body {
 }
     /* 시계 아이콘 */
 .main .clock_icon {
-    position: absolute;
     display: block;
+    position: absolute;
     top: 0;
     left: 0;
     margin-top: -1px;
@@ -1182,9 +1182,10 @@ html, body {
     }
     .main footer .ft_link::before {
         left: 50%;
-        margin-top: -12rem;
+        width: 690px;
+        margin-top: -10rem;
         margin-left: 0;
-        background: url(../images/main/ft_bg.png) no-repeat;
+        background: url(../images/main/ft_m-bg.png) no-repeat;
         transform: translateX(-50%);
     }
     .main footer .ft_link ul {
@@ -1495,8 +1496,8 @@ html, body {
     }
     /****** KTL아카데미 ******/
     .main .edu_wrap .inner {
-        padding: 0;
         height: 32rem;
+        padding: 0;
     }
     .main .edu_wrap .left_box {
         padding: 5.5rem 1rem 0;
@@ -1526,6 +1527,7 @@ html, body {
     .main footer .ft_link::before {
         width: 100%;
         min-width: 400px;
+        margin-top: -10.5rem;
         background-size: 100%;
         background-position: bottom center;
     }
