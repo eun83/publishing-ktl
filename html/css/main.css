@@ -857,7 +857,7 @@ html, body {
 .main .clock_icon {
     position: absolute;
     display: block;
-    top; 0;
+    top: 0;
     margin-top: -1px;
 }
 .main .clock_icon::before {
