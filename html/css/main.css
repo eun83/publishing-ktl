@@ -848,7 +848,8 @@ html, body {
     position: relative;
 }
 .main .borad_wrap .new_list li a .date span {    
-    padding-left: 1.375rem;
+    display: inline-block;
+    margin-left: 1.375rem;
     font-size: .75rem;
     color: #6c6c6c;
     letter-spacing: 0;
@@ -858,6 +859,7 @@ html, body {
     position: absolute;
     display: block;
     top: 0;
+    left: 0;
     margin-top: -1px;
 }
 .main .clock_icon::before {
@@ -865,6 +867,7 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
     width: .75rem;
     height: .75rem;
     margin-top: 3px;
