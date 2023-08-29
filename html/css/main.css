@@ -1490,14 +1490,15 @@ html, body {
     }
     /****** KTL아카데미 ******/
     .main .edu_wrap .inner {
+        padding: 0;
         height: 32rem;
     }
     .main .edu_wrap .left_box {
-        padding-top: 5.5rem;
+        padding: 5.5rem 1rem 0;
     }
     .main .edu_wrap .right_box .academy_list .academy {
         height: 32rem;
-        padding: 12.5rem 0 0;
+        padding: 12.5rem 0 0 1rem;
         background-size: 125%;
     }
     .main .edu_wrap .right_box .academy_list .academy p {
