@@ -48,8 +48,8 @@ html, body {
 }
 .main .tab_list .on,
 .main .tab_list .on:hover {
-    background: #333;
     border-radius: .625rem;
+    background: #333;
 }
 .main .tab_list .on a {
     color: #fff;
@@ -104,8 +104,8 @@ html, body {
     opacity: .2;
 }
 .main .slick-dots li.slick-active button:before {
-    opacity: 1;
     color: #333;
+    opacity: 1;
 }
     /* play / stop 버튼 */
 .main .play_btn {
@@ -148,7 +148,6 @@ html, body {
     border-top: none;
     border-bottom: none;
 }
-
 /********** 기존 메뉴 색상 변경 **********/
 .main .header,
 .main .header.scrolled .gnb_header,
@@ -329,10 +328,10 @@ html, body {
 .main .link_wrap .inner > h3 {
     display: flex;
     width: 12.5%;
+    padding-right: 1%;
     color: #ddd;
     letter-spacing: 1px;
     align-items: center;
-    padding-right: 1%;
 }
 .main .link_wrap .inner > ul li {
     width: calc((100% / 7) - 1%);
@@ -464,8 +463,8 @@ html, body {
 .main .prog_box .dots_control {
     display: inline-flex;
     position: absolute;
-    margin-top: -5.5rem;
     z-index: 1;
+    margin-top: -5.5rem;
 }
     /* 교육과정 박스 */
 :root {
@@ -475,9 +474,9 @@ html, body {
     --course-yellow: #ffce3d;
 }
 .main .prog_wrap .prog_curr {
-    margin-left: 20%;
-    min-width: 1280px;
     width: 100%;
+    min-width: 1280px;
+    margin-left: 20%;
     
 }
 .main .prog_wrap .curriculum .course {    
@@ -536,8 +535,8 @@ html, body {
 .main .curr_btn .arrow_icon {
     display: block;
     position: absolute;
-    margin-top: -.5rem;
     right: -.125rem;
+    margin-top: -.5rem;
     opacity: .5;
 }
 .main .curr_btn .arrow_icon::before {
@@ -593,15 +592,15 @@ html, body {
 .main .curriculum .slick-prev,
 .main .curriculum .slick-next {
     position: absolute;
-    margin-left: -3.5rem;
     top: 50%;
-    transform: translateY(-80%);
     width: 4rem;
     height: 4rem;
+    margin-left: -3.5rem;
     border: 1px solid #888;
     border-radius: 50px;
     background: rgba(255,255,255,1);
     color: #888;
+    transform: translateY(-80%);
     cursor: pointer;    
 }
 .main .curriculum .slick-next {
@@ -1044,25 +1043,23 @@ html, body {
     letter-spacing: 0;
 }
 
-
 /* ---------- respond ---------- */
 
 /* 플러스사이즈 */
-@media screen and (max-width: 1270px) {
-    
+@media screen and (max-width: 1270px) {    
     /****** 교육과정 ******/
     .main .tit_box {
         margin-bottom: 2rem;
     }
     .main .prog_box .date_box {
-        position: static;
         display: flex;
+        position: static;
         width: 100%;
         margin-bottom: 1rem;
     }
     .main .prog_box .date_box p {
-        margin-bottom: 0;
         margin-right: 1rem;
+        margin-bottom: 0;
     }
     .main .prog_box .date_box p span,
     .main .prog_box .date_box p:first-child span {
@@ -1079,26 +1076,29 @@ html, body {
         margin-bottom: 0;
     }
     .main .prog_box .dots_control {
-        margin-top: 0;
-        position: static;
         display: flex;
+        position: static;
+        margin-top: 0;
         justify-content: center;
     }
-
     /****** KTL아카데미 ******/
-    .main .right_box .dots_control {        
+    .main .right_box .dots_control {
+        right: 27rem;        
         margin-left: 0;
-        right: 27rem;
-    }  
+    }
+    /****** footer ******/
+    .main footer .ft_link ul {
+        width: 60%;
+    }
 }
 
 /* 플러스사이즈 */
 @media screen and (max-width: 1139px) {
     /****** link ******/
     .main .link_wrap .inner {
+        display: block;
         max-width: 100%;
         margin: 1.5rem auto 3rem;
-        display: block;
     }
     .main .link_wrap .inner > h3 {
         display: block;
@@ -1108,8 +1108,8 @@ html, body {
     .main .link_wrap ul {
         display: block;
         width: 100%;
-        text-align: center;
         font-size: 0;
+        text-align: center;
     }
     .main .link_wrap .inner > ul li {
         display: inline-block;
@@ -1135,7 +1135,6 @@ html, body {
 }
 
 @media screen and (max-width: 1135px) {
-
     /****** visual ******/
     .main .visual .text_box {
         background-position: top 3.5rem left;
@@ -1144,6 +1143,9 @@ html, body {
         bottom: 4.25rem;
     }
     /****** banner ******/
+    .main .banner_wrap .inner {
+        padding-bottom: 15rem;
+    }
     .main .banner_wrap .inner .banner_01 {
         width: 58%;
         padding: 2.375rem 2.5rem 2.5rem;
@@ -1158,15 +1160,69 @@ html, body {
     .main .banner_wrap .inner > div p span {
         display: block;
     } 
+    /****** footer ******/
+    .main footer .inner {
+        padding: 2.25rem 0 8rem;
+    }
+    .main footer .ft_link {
+        display: block;
+    }
+    .main footer .ft_link::before {
+        left: 50%;
+        margin-top: -12rem;
+        margin-left: 0;
+        background: url(../images/main/ft_bg.png) no-repeat;
+        transform: translateX(-50%);
+    }
+    .main footer .ft_link ul {
+        width: 100%;
+        margin-top: 5rem;
+        justify-content: center;
+    }
+    .main footer .ft_link li:first-child {
+        margin-left: 0;
+    }
+    .main footer .ft_select {
+        display: flex;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        width: 100%;
+        padding: 0 1rem;
+        transform: translateX(-50%);
+        justify-content: center;
+    }
+    .main footer .ft_select div:first-child {
+        margin-right: 1.5rem;
+    }
+    .main footer .ft_select select {
+        width: calc(100% - 3rem);
+        max-width: 12.5rem;
+    }
+    .main footer .ft_info {
+        display: block;
+        padding: 0 1rem;
+        word-break: keep-all;
+    }
+    .main footer .ft_info > a {
+        position: absolute;
+        top: 3.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main footer .ft_info > div {
+        width:100%;
+        margin: 1.75rem 0 0 0;
+        text-align: center;
+    }
 }
 
 /* 플러스사이즈 */
 @media screen and (max-width: 1080px) {
-
     /****** 교육과정 ******/
     .main .prog_wrap .prog_curr {
-        margin-left: 0;
         min-width: auto;
+        margin-left: 0;
     }
     .main .prog_wrap .curriculum .course {
         margin: 0 1rem 1.5rem 0;
@@ -1174,12 +1230,10 @@ html, body {
     .main .prog_wrap .curriculum .slick-active-last {
         opacity: 1;
     }
-
 }
 
-
 @media screen and (max-width:991px) {
-
+    /****** 기존메뉴색상 ******/
     .main .header {
         background: #fff;
     }
@@ -1192,8 +1246,8 @@ html, body {
     .main .visual .text_box {
         width: 100%;
         max-width: 100%;
-        padding-top: 15rem;
         margin-bottom: 2rem;
+        padding-top: 15rem;
         background: url(../images/main/m_visual_text.png) no-repeat;
         background-size: 85%;
         background-position: top center;
@@ -1213,8 +1267,8 @@ html, body {
     }
     .main .login_wrap .login_box {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 1rem;
+        justify-content: space-between;
     }
     .main .login_box input {
         width: calc((100% - 6.875rem) / 2);
@@ -1226,13 +1280,12 @@ html, body {
     .main .login_wrap .id_pw_find {
         display: inline-block;
         margin-left: 2rem;
-    }
-    
+    }    
     /****** KTL아카데미 ******/
     .main .edu_wrap .left_box {
         position: absolute;
-        width: 100%;
         z-index: 1;
+        width: 100%;
     }
     .main .edu_wrap .edu_title {
         margin-bottom: 0;
@@ -1261,12 +1314,10 @@ html, body {
         right: 2rem;
         margin-top: -9rem;
     }
-
 }
 
 /* 플러스사이즈 */
-@media screen and (max-width:875px) {
-    
+@media screen and (max-width:875px) {    
     /****** 교육과정 ******/
     .main .course {
         min-width: 13.375rem;
@@ -1289,7 +1340,6 @@ html, body {
     .main .curr_btn .arrow_icon {
         margin-top: -1rem;
     }
-
     .main .borad_wrap .new_list {
         flex-direction: column;
     }
@@ -1310,12 +1360,10 @@ html, body {
     .main .borad_wrap .new_list li a p:first-child {
         min-height: auto;
     }
-
 }
 
 /* 플러스사이즈 */
 @media screen and (max-width: 825px) {
-
     /****** banner ******/
     .main .banner_wrap .inner .banner_02 p {
         margin: 2.375rem 1.75rem 1.9375rem;
@@ -1323,7 +1371,6 @@ html, body {
 }
 
 @media screen and (max-width:767px) {
-
     /****** visual ******/
     .main .visual .text_box {        
         padding-top: 12.5rem;
@@ -1337,8 +1384,8 @@ html, body {
         word-break: keep-all;
     }
     .main .visual .text_box > div p:first-child {
-        font-size: .938rem;
         margin: .75rem 0 .25rem;
+        font-size: .938rem;
     }
     /***** link ******/
     .main .link_wrap ul li a::before {
@@ -1378,10 +1425,9 @@ html, body {
     .main .banner_wrap .inner .banner_01 {
         width: 100%;
         height: auto;
-        padding: 2rem 5%;
         margin-bottom: 1rem;
-    }
-    
+        padding: 2rem 5%;
+    }    
     .main .banner_wrap .inner .banner_02 {
         width: 100%;
         height: auto;
@@ -1390,17 +1436,16 @@ html, body {
     .main .banner_wrap .inner > div::after {
         top: auto;
         bottom: 0;
-
     }
     .main .banner_wrap .inner .banner_01::after {
         height: 155px;
         background-size: contain;
     }
     .main .banner_wrap .inner .banner_02::after {
-        height: 120px;
-        background-size: contain;     
+        right: 1.5rem;     
         bottom: 52px;
-        right: 1.5rem;
+        height: 120px;
+        background-size: contain;
     }
     .main .banner_wrap .inner .banner_02 p {
         margin: 2rem 5% 1.25rem;
@@ -1411,12 +1456,10 @@ html, body {
     .main .banner_wrap .inner > div a p:first-child {
         font-size: 1.5rem;
     }
-}
-    
+}    
 
 /* 플러스사이즈 */
 @media screen and (max-width:705px) {
-
     /***** link ******/
     .main .link_wrap ul li a {
         min-height: 115px;
@@ -1427,7 +1470,6 @@ html, body {
 }
 
 @media screen and (max-width: 640px) {
-
     /****** visual ******/
     .main .visual .inner {
         margin: 3.5rem 0;
@@ -1455,24 +1497,30 @@ html, body {
     }
     .main .right_box .dots_control {
         margin-top: -6.25rem;
-    }
-    
-    
-    
+    }    
 }
 
 @media screen and (max-width: 600px) {
-
     /****** 교육과정 ******/
     .main .tit_box .tab_list {
         margin-top: 1rem;
     }
-
+    /****** footer ******/
+    .main footer .ft_link li:nth-child(2) {
+        display: none;
+    }
+    .main footer .ft_link::before {
+        width: 100%;
+        min-width: 400px;
+        background-size: 100%;
+        background-position: bottom center;
+    }
+    .main footer .ft_info > div span {
+        display: block;
+    }
 }
 
-
 @media screen and (max-width:480px) {
-
     /****** visual ******/
     .main .visual .inner {
         margin: 3rem 0;
@@ -1480,7 +1528,6 @@ html, body {
     .main .visual .text_box {
         padding-top: 7rem;
     }
-
     /**** link *****/
     .main .link_wrap ul {
         text-align: left;        
@@ -1498,7 +1545,6 @@ html, body {
         margin-left: .0;
     }
     /****** KTL아카데미 ******/
-
     .main .edu_wrap .right_box .aca_01 {
         background: url(../images/main/ktl_m-bg_01.png)no-repeat;    
     }
@@ -1509,15 +1555,30 @@ html, body {
         background: url(../images/main/ktl_m-bg_03.png)no-repeat;    
     }
     .main .edu_wrap .right_box .academy_list .academy {
-        background-position: right bottom;
         background-size: 80%;
+        background-position: right bottom;
     }
-
+    /****** footer ******/
+        /* footer 여백을 위한 banner 패딩 */
+    .main .banner_wrap .inner {
+        padding-bottom: 10rem;
+    }
+    .main footer .inner {
+        padding-bottom: 11rem;
+    }
+    .main footer .ft_select {
+        display: block;
+        left: auto;
+        text-align: center;
+        transform: none;
+    }
+    .main footer .ft_select div:first-child {
+        margin-right: 0;
+    }
 }
 
 /* 플러스사이즈 */
 @media screen and (max-width:368px) {
-
     /****** 교육과정 ******/
     .main .tab_list a {
         padding: .1875rem .5rem .375rem;
@@ -1525,8 +1586,7 @@ html, body {
 }
 
 /* 플러스사이즈 */
-@media screen and (max-width:361px) {
-    
+@media screen and (max-width:361px) {    
     /**** link *****/
     .main .link_wrap .inner > ul li {
         width: calc(50% - .625rem);
