@@ -1157,7 +1157,7 @@ html, body {
     }
     /****** banner ******/
     .main .banner_wrap .inner {
-        padding-bottom: 15rem;
+        padding-bottom: 13rem;
     }
     .main .banner_wrap .inner .banner_01 {
         width: 58%;
@@ -1521,6 +1521,10 @@ html, body {
         margin-top: 1rem;
     }
     /****** footer ******/
+        /* footer 여백을 위한 banner 패딩 */
+    .main .banner_wrap .inner {
+        padding-bottom: 9.5rem;
+    }
     .main footer .ft_link li:nth-child(2) {
         display: none;
     }
@@ -1577,7 +1581,7 @@ html, body {
     /****** footer ******/
         /* footer 여백을 위한 banner 패딩 */
     .main .banner_wrap .inner {
-        padding-bottom: 10rem;
+        padding-bottom: 9rem;
     }
     .main footer .inner {
         padding-bottom: 11rem;
@@ -1590,6 +1594,14 @@ html, body {
     }
     .main footer .ft_select div:first-child {
         margin-right: 0;
+    }
+}
+
+/* 플러스사이즈 */
+@media screen and (max-width:375px) {
+        /* footer 여백을 위한 banner 패딩 */
+    .main .banner_wrap .inner {
+        padding-bottom: 6rem;
     }
 }
 
