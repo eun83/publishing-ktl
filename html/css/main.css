@@ -163,6 +163,9 @@ html, body {
 .main .util_header .right_util .sitemap_wrap > li:nth-child(3) {
     display: none;
 }
+.main .gnb_header {
+    border-bottom: 0;
+}
 /********** 메인 비주얼 **********/
 .main .visual {
     background: #f6f3f3;
@@ -926,10 +929,6 @@ html, body {
     margin-bottom: .5rem;
     font: 900 1.5rem 'NanumSquare';
 }
-.main .banner_wrap .inner > div a p:first-child {
-    margin-bottom: 1.25rem;
-    font-size: 1.75rem;
-}
 .main .banner_wrap .inner .banner_01 {
     width: 48%;
     padding: 2.625rem 2.5rem 2.5rem;
@@ -941,6 +940,10 @@ html, body {
     background: url(../images/main/banner_img01.png) no-repeat right bottom;
     border-color: transparent;
 }
+.main .banner_wrap .inner .banner_01 p:first-child {
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
 .main .banner_wrap .inner .banner_02 {
     width: 30%;
     margin-left: 1.25rem;
@@ -951,7 +954,7 @@ html, body {
 .main .banner_wrap .inner .banner_02 p:nth-child(2) {
     margin-top: 0;
 }
-.main .banner_wrap .inner .banner_02 a {
+.main .banner_wrap .inner .banner_02 span {
     display: block;
     position: relative;
     z-index: 2;
