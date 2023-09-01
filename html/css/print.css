@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media print {
+	@page {size: A4; page-break-after: always;}
+	body {font-size: 13px;}
+	.header {display: none !important;}
+	.footer {display: none !important;}
+	.contents {margin-top: 0 !important; padding-bottom: 0 !important;}
+	.container {width: 991px !important;}
+	.sub_left {display: none !important;}
+	.sub_right {width: 100% !important;}
+	.sub_con {padding-bottom: 0 !important;}
+	
+	.recept_txt_wrap a.print_btn {display: none !important;}
+
+	
+}
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
