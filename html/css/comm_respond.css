@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+
+@media screen and (max-width:1300px){
+	.quick_box {left: auto; right: 20px; margin-left: 0;}
+	.head_logo {left: 1rem;}
+	.util_header .right_util {margin-right: 1rem;}
+}
+
+@media screen and () {
+	
+}
+
+@media screen and (max-width:1200px){
+	.container {padding:0 5px;}
+
+	.foot_left .left_row2 > li { float: none; line-height: 150%; margin-right: 18px; color: #6b747c; font-size: 0.875em;}
+	.contents {padding-bottom:194px;}
+
+	/* link_box */
+	/*.login_before_box .link_box {width: 65%; float: none;}*/
+}
+
+@media screen and (max-width:991px){
+	/* header */
+	.gnb_header {display: none;}
+	.gnb_header .container {height:80px;}
+	.util_header .container {position:relative; padding-top: 2px; padding-bottom: 2px; border-bottom: 1px solid #ccc; z-index:1; max-width:1280px; margin:0 auto; }
+
+	.head_logo { display: inline-block; position: relative; left: 0; top: 0; padding: 20px 0; z-index: 1;}
+	.m_gnb_btn {display:block; position:absolute; right:20px; top: 50%; z-index:1; width:24px; height:19px; margin-top:-10px;}
+	.m_search_btn {display: block;position: absolute; right: 60px; top:50%; z-index: 1; color: #e41212; font-size: 29px;}
+
+
+	.gnb {display: none;}
+	.sitemap_btn {display: none;}
+
+	.header.scrolled {padding-top:0;position: fixed; top: 0; left: 0; width: 100%;}
+	.header.scrolled  .util_header .container {background: #fff;}
+	.contents {padding-bottom: 194px;}
+
+	/* right_util */
+	.util_header .right_util .search_box {display: none; float: left; position: relative;}
+	.util_header .right_util .sitemap_wrap {display: none; float: left; margin-left: 23px; padding: 13.5px 0;}
+
+
+
+	/* footer */
+	.footer .container {}
+	.q_share_box {display: block;}
+}
+
+
+@media screen and (max-width: 914px){
+
+	.footer .container {text-align: center;}
+	.footer .container .foot_right {float: none; display: inline-block; margin-top: 15px;}
+	.contents {padding-bottom:304px;}
+}
+
+
+@media screen and (max-width: 826px) {
+	.footer .container {text-align: center;}
+	/*.footer .container .foot_area_box {float: none; display: inline-block; margin-top: 10px;}*/
+	.contents {padding-bottom:304px;}
+}
+
+@media screen and (max-width:767px){
+	/* header */
+
+	/*서비스메뉴 모바일에서만 보이기*/
+	/* .gnb > li:last-child {display: block;} */
+
+	/* footer */
+	.footer .container {height:;}
+}
+
+@media screen and (max-width: 640px){
+.footer .container .foot_left > li { float: none;}
+.footer .container .foot_left > li:first-child { margin-right: 0; margin-bottom: 10px;}
+.contents {padding-bottom:368px;}
+	
+}
+
+@media screen and (max-width:480px){
+	/* common */
+	body {font-size:14px;}
+
+	/* header */
+	.head_logo a img {width: 260px;}
+	.m_gnb_top .m_logo {width: 235px;}
+	.m_head_logo { display: inline-block; position: relative; left: 0; top: 0; padding: 20px 0; z-index: 1;}
+	.head_logo {display: none;}
+
+	.contents {padding-bottom:;}
+
+	/* footer */
+	.footer .container {height:;}
+	.foot_left .left_row1 > li { float: none; padding-right: 0; margin-right: 0; border-right: none;}
+	.contents {padding-bottom:404px;}
+}
+
+
+@media screen and (max-width: 360px){
+	.footer .container .foot_right .img_box {float: none; margin-right: 0;}
+	.footer .container .foot_area_box {float: none; margin-top: 15px;}
+	.contents {padding-bottom: 538px;}
+}
+
+
+/* 23-09-01 수정 추가 */
+/* 
+	1. (line 5~6) .head_logo / .util_header .right_util << 헤더 좌우 여백 수정
+	2. (line 30) .m_gnb_btn << 모바일 메뉴 아이콘 높이 수정, 위치 조정
+ */

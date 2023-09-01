@@ -1,0 +1,5 @@
+수정 된 파일 목록 (기존 css 중)
+- common.css
+- comm_respond.css
+
+css 맨 밑에 상세한 수정내역 주석 남김
