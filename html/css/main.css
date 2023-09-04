@@ -1058,8 +1058,58 @@ html, body {
     color: #647587;
     letter-spacing: 0;
 }
+/********** top_btn **********/
+.main .quick_box {
+    left: auto;
+    margin-left: auto;
+    right: 0;
+    margin-right: 12.5vw;
+    bottom: 13.5rem;
+}
+.main .quick_box button, 
+.main .quick_box a {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(244, 105, 111,.95);
+    border-radius: .5rem;
+    border: 0;
+    color: #fff;
+}
+.main .quick_box button::after,
+.main .quick_box a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -.375rem;
+    margin-top: -.1875rem;
+    width: .625rem;
+    height: .625rem;
+    border-top: solid 2px currentColor;
+    border-right: solid 2px currentColor;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.main .quick_box button:hover, 
+.main .quick_box a:hover {
+    background: rgba(255, 88, 113,1);
+    transition: all .3s ease-in;
+}
 
 /* ---------- respond ---------- */
+
+/* top_btn 플러스사이즈 */
+@media screen and (max-width: 1665px) {
+    .main .quick_box {
+        margin-right: 5vw;
+    }
+}
+@media screen and (max-width: 1385px) {
+    .main .quick_box {
+        margin-right: 1rem;
+    }
+}
 
 /* 플러스사이즈 */
 @media screen and (max-width: 1270px) {    
