@@ -171,15 +171,16 @@ html, body {
     background: #f6f3f3;
 }
 .main .visual .inner {
-    max-width: 1730px;
+    max-width: 1920px;
     margin: 4.125rem auto;
 }
 .main .visual .text_box { 
     position: relative;
-    width: 60%;
-    max-width: 1300px;
+    width: 63%;
+    max-width: 1220px;
     background: url(../images/main/visual_text.png) no-repeat;
     background-size: 100%;
+    background-position: top 1.875rem right;
 }
 .main .visual .text_box > div {
     position: absolute;
@@ -1060,32 +1061,32 @@ html, body {
 }
 /********** top_btn **********/
 .main .quick_box {
-    left: auto;
-    margin-left: auto;
     right: 0;
-    margin-right: 12.5vw;
     bottom: 13.5rem;
+    left: auto;
+    margin-right: 12.5vw;
+    margin-left: auto;
 }
 .main .quick_box button, 
 .main .quick_box a {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-    background: rgba(244, 105, 111,1);
-    border-radius: .5rem;
     border: 0;
+    border-radius: .5rem;
+    background: rgba(244, 105, 111,1);
     color: #fff;
 }
 .main .quick_box button::after,
 .main .quick_box a::after {
     content: '';
     position: absolute;
-    left: 50%;
     top: 50%;
-    margin-left: -.375rem;
-    margin-top: -.1875rem;
+    left: 50%;
     width: .625rem;
     height: .625rem;
+    margin-top: -.1875rem;
+    margin-left: -.375rem;
     border-top: solid 2px currentColor;
     border-right: solid 2px currentColor;
     -webkit-transform: rotate(-45deg);
@@ -1109,10 +1110,16 @@ html, body {
     .main .quick_box {
         margin-right: 1rem;
     }
+    .main .visual .text_box {
+        background-position: center right;
+    }
 }
 
 /* 플러스사이즈 */
 @media screen and (max-width: 1270px) {    
+    .main .visual .text_box {
+        background-size: 120%;
+    }
     /****** 교육과정 ******/
     .main .tit_box {
         margin-bottom: 2rem;
@@ -1203,7 +1210,8 @@ html, body {
 @media screen and (max-width: 1135px) {
     /****** visual ******/
     .main .visual .text_box {
-        background-position: top 3.5rem left;
+        background-size: 140%;
+        background-position: top 2.5rem right;
     }
     .main .visual .text_box > div {
         bottom: 4.25rem;
@@ -1314,9 +1322,9 @@ html, body {
         width: 100%;
         max-width: 100%;
         margin-bottom: 2rem;
-        padding-top: 15rem;
+        padding-top: 17rem;
         background: url(../images/main/m_visual_text.png) no-repeat;
-        background-size: 85%;
+        background-size: auto;
         background-position: top center;
     }     
     .main .visual .text_box > div {
@@ -1440,7 +1448,7 @@ html, body {
 @media screen and (max-width:767px) {
     /****** visual ******/
     .main .visual .text_box {        
-        padding-top: 12.5rem;
+        padding-top: 13.5rem;
         background-size: 100%;
     } 
     .main .visual .text_box > div {
@@ -1542,7 +1550,7 @@ html, body {
         margin: 3.5rem 0;
     }
     .main .visual .text_box {
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
     .main .login_wrap {
         display: none;
@@ -1599,7 +1607,7 @@ html, body {
         margin: 3rem 0;
     }
     .main .visual .text_box {
-        padding-top: 7rem;
+        padding-top: 8.25rem;
     }
     /**** link *****/
     .main .link_wrap ul {
