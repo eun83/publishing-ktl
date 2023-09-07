@@ -1588,6 +1588,10 @@ html, body {
     .main .right_box .dots_control {
         margin-top: -6.25rem;
     }    
+    /****** top_btn ******/
+    .main .quick_box {
+        bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
