@@ -468,7 +468,7 @@ html, body {
     display: inline-flex;
     position: absolute;
     z-index: 1;
-    margin-top: -5.5rem;
+    margin-top: -4rem;
 }
     /* 교육과정 박스 */
 :root {
