@@ -12,86 +12,33 @@
     <meta property="og:image" content="https://edu.ktl.re.kr/images/common/header_logo.png">
     <meta property="og:url" content="url">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport"
-        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <!-- <link rel="stylesheet" href="https://edu.ktl.re.kr/css/notosans.css">
-    <link rel="stylesheet" href="https://edu.ktl.re.kr/css/nanumsquare.css"> -->
-    <script type="text/javascript">
-        var CONTEXT_PATH = "";
-        var IDX_MEMBER = "0";
-
-        WebFont.load({
-            // For google fonts
-            google: {
-                families: ['Open Sans']
-            },
-            // For early access or custom font
-            custom: {
-                families: ['Noto Sans KR', 'NanumSquare'],
-                urls: [CONTEXT_PATH + './css/notosans.css', CONTEXT_PATH + './css/nanumsquare.css']
-            }
-        });
-
-        /* @author KDG */
-        var emailRule = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;//이메일 정규식
-        var phoneRule = /^\d{3}-\d{3,4}-\d{4}$/;//휴대폰 번호 정규식
-    </script>
-    <link rel="shortcut icon" type="image/x-icon" href="https://edu.ktl.re.kr/images/common/favicon.ico">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="https://edu.ktl.re.kr/images/common/favicon.ico"> 
     <title>KTL Academy</title>
     <!--//title.asp-->
-    <!-- common_css.asp -->
+
+    <!-- common_css.asp --> <!-- 기존 css 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="./css/notosans.css">
+    <link rel="stylesheet" type="text/css" href="./css/nanumsquare.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/animate.css">
     <link rel="stylesheet" type="text/css" href="./css/board.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/comm_respond.css">
     <link rel="stylesheet" type="text/css" href="./css/print.css">
-    <link rel="stylesheet" href="./css/slick.css" type="text/css">
-    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://edu.ktl.re.kr/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">    
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <!--[if lt IE 10]>
-	<link rel="stylesheet" type="text/css" href="/css/ie9.css">
-<![endif]-->
     <!-- // common_css.asp -->
-    <!-- common_js.asp -->
+
+    <!-- common_js.asp --> <!-- 기존 js 불러오기 -->
     <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/common.js"></script>
-    <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/snsShare.js"></script>
     <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/slick.min.js"></script>
-    <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
-
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/jquery.form.min.js"></script>
-    <!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script> -->
-    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script type="text/javascript" src="https://edu.ktl.re.kr/js/common/comDaumPostcode.js"></script>
-
-    <!--[if lt IE 10]>
-	<script src="/js/common/placeholders.min.js" type="text/javascript"></script>
-<![endif]-->
-    <!--[if lt IE 9]>
-	<script src="/js/common/html5shiv.js" type="text/javascript"></script>
-	<script src="/js/common/respond.min.js" type="text/javascript"></script>
-<![endif]-->
     <!-- // common_js.asp -->
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <!-- <link rel="stylesheet" href="./css/main_respond.css" type="text/css"> -->
 
-    <script type="text/javascript" src="./js/common/main.js"></script>
-    <!-- <script type="text/javascript" src="./js/common/sub.js"></script>
-    <script type="text/javascript" src="./js/default.js"></script> -->
-
+    <!-- 로그인 alt 알림 -->
     <script>
         $(function () {
             $(document).on("keydown", function (e) {
@@ -122,10 +69,11 @@
         });
     </script>
 
-    <!-- 사파리 전화번호 이슈 -->
-    <meta name="format-detection" content="telephone=no" />
-    <!-- font 추가 -->
+    <!-- 23-09-01 리뉴얼 -->    
+    <meta name="format-detection" content="telephone=no" /> <!-- 사파리 전화번호 이슈 -->
     <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main_new.css" type="text/css">
+    <script type="text/javascript" src="./js/common/main_new.js"></script>
 </head>
 
 <body>
